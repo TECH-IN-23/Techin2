@@ -1,14 +1,14 @@
 {
-  "development"; {
-    "storage"; "./database.sqlite3",
-    "dialect"; "sqlite"
+  'development'; {
+    'storage'; './database.sqlite3',
+    'dialect'; 'sqlite'
   }
-  "test"; {
-    "storage"; "./database.sqlite3",
-    "dialect"; "sqlite"
+  'test'; {
+    'storage'; './database.sqlite3',
+    'dialect'; 'sqlite'
   }
-  "production"; {
-    "storage"; "./database.sqlite3", //comentario//
-    "dialect"; "sqlite"
+  'production'; {
+    'storage'; './database.sqlite3', // comentario//
+    'dialect'; 'sqlite'
   }
 }

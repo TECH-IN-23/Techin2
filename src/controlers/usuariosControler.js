@@ -1,23 +1,20 @@
-const { response } = require('express') // arquivo controller //
+const Usuario = require('../models').Usuario 
 
 exports.listAll = (req, res) => {
-  const usuarios = [
-    {
-      nome: 'teste 01',
-      email: 'teste1@123.com'
-    },
-    {
-      nome: 'teste 02',
-      email: 'teste2@123.com'
-    }
-  ]
-  res.send(usuarios)
+    Usuario.findAll().then(usuarios => {
+        res.send(usuarios)    
+    }).catch(error =>{
+
+    })  
 }
 
 exports.createOne = (req, res) => {
-  const response = {
-    message: 'Usuário criado com sucesso!',
-    data: req.body
-  }
-  res.send(response)
+    console.log(Usuario)
+    const { nome, email } = req.body
+    Usuario.create({nome, email}).then(usuario => {
+        res.send(usuario)
+    }).catch(error => {
+        res.send(error)
+    })     
+           
 }

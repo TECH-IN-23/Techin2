@@ -7,7 +7,7 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-const routes = require('./src/routes/usuarioRoutes')
+const routes = require('./src/routes/produtoRoutes')
 
 routes(app)
 

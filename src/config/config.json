@@ -1,14 +1,14 @@
 {
   "development": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./database.mariadb",
+    "dialect": "mysql"
   },
   "test": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./database.mariadb",
+    "dialect": "mysql"
   },
   "production": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./database.mariadb",
+    "dialect": "mysql"
   }
 }
